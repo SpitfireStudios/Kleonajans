@@ -3,6 +3,27 @@ img[src*="logo.png"]{
     position: absolute;
 }
 
+.list-group{
+    position: relative;
+    align-self: center;
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: right;
+}
+
+.list-group-item{
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color:transparent;
+    border: none;
+    color: white;
+}
+
+.list-group-item:hover{
+    color: #222222;
+}
+
 .grid-container {
     display: grid;
     min-width: -webkit-fill-available;
@@ -10,9 +31,9 @@ img[src*="logo.png"]{
     margin:2em;
     padding: 5em;
     grid-template-columns: auto auto;
-    grid-template-rows:50rem auto auto;
+    grid-template-rows:80vh auto auto;
     grid-row-gap: 20em;
-    background-color: #ED464C;
+    background-color: #DC143C;
   }
 
 .tagline{
