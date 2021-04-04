@@ -1,3 +1,13 @@
+#border{
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    border-style: solid;
+    border-width: 3em;
+    border-color: white;
+    position: fixed;
+}
+
 img[src*="logo.png"]{
     width: 10em;
     position: absolute;
@@ -28,7 +38,9 @@ img[src*="logo.png"]{
     display: grid;
     min-width: -webkit-fill-available;
     min-height: -webkit-fill-available;
+    /* 
     margin:2em;
+    */
     padding: 5em;
     grid-template-columns: auto auto;
     grid-template-rows:80vh 80vh 80vh;
