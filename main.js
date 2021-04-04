@@ -1,0 +1,1 @@
+var rellax = new Rellax('.h1, .h2');
