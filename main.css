@@ -61,6 +61,7 @@ img[src*="logo.png"]{
     color: white;
     position: relative;
     line-height: 1.5em;
+    opacity: 0;
 }
 
 .h2{
