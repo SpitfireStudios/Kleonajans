@@ -35,7 +35,7 @@ img[src*="logo.png"]{
     color: #222222;
 }
 
-.grid-container-intro {
+.grid-container-main {
     display: grid;
     min-width: -webkit-fill-available;
     min-height: -webkit-fill-available;
@@ -44,31 +44,32 @@ img[src*="logo.png"]{
     */
     padding: 5em;
     grid-template-columns: auto auto;
-    grid-template-rows:80vh 80vh 80vh;
+    grid-template-rows:80vh 80vh 80vh 40vh 80vh 40vh;
     grid-row-gap: 10em;
     background-color: #DC143C;
     align-items: center;
   }
 
 .h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size:4em;
     align-self: center;
     display: grid;
     grid-row: 1;
     grid-column: 1;
-    font-weight: bold;
     color: white;
     position: relative;
     line-height: 1.5em;
-    opacity: 0;
 }
 
 .h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size:2em;
     display: grid;
-    font-weight: bold;
     color: white;
     position: relative;
     line-height: 2em;
@@ -81,12 +82,12 @@ img[src*="logo.png"]{
     min-width: -webkit-fill-available;
     min-height: -webkit-fill-available;
     margin: 2em;
-    margin-top: 20em;
     padding: 5em;
     grid-template-columns: auto auto auto;
     grid-template-rows: 10vh 10vh;
     justify-items: center;
     align-items: center;
+    align-content: center;
   }
 
 img[src="services/code.svg"], [src="services/edit.svg"], [src="services/ad.svg"]{
@@ -95,33 +96,30 @@ img[src="services/code.svg"], [src="services/edit.svg"], [src="services/ad.svg"]
 }
 
 .services{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size:2em;
     display: grid;
-    font-weight: bold;
-    color: #DC143C;
+    color: white;
     position: relative;
     padding: 2rem;
 }
 
-.grid-container-main {
+.grid-container-process {
     display: grid;
     min-width: -webkit-fill-available;
     min-height: -webkit-fill-available;
-    margin:2em;
-    padding: 5em;
-    grid-template-columns: auto;
-    grid-template-rows: 80vh 80vh;
-    grid-row-gap: 10em;
-    align-items: center;
+    grid-template-rows: 100vh 100vh 100vh;
   }
 
-  h3{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:2em;
-    display: grid;
-    font-weight: bold;
-    color: #DC143C;
+  .process{
+    background-size: cover;
+    padding: 1em;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
     position: relative;
-    line-height: 2em;
-}
+    font-size:8em;
+  }
