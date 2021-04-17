@@ -69,6 +69,7 @@ img[src*="logo.png"]{
     font-style: normal;
     font-size:2em;
     display: grid;
+    opacity: 1;
     color: white;
     position: relative;
     line-height: 2em;
