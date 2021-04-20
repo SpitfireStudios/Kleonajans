@@ -8,18 +8,61 @@
     position: fixed;
 }
 
+@media screen and (max-width: 823px){
+
+    #border{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-style: solid;
+    border-width: 1em;
+    border-color: white;
+    position: fixed;
+}
+
+}
+
 img[src*="logo.png"]{
     width: 10em;
     position: absolute;
 }
 
+@media screen and (max-width: 823px){
+
+    img[src*="logo.png"]{
+        width: 5em;
+        position: absolute;
+}
+
+}
+
+
+
+.section{
+    width: 100%;
+    height: 100vh;
+    padding: 4rem;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 823px){
+
+    .section{
+        width: 100%;
+        height: 100vh;
+        padding: 2rem;
+        overflow: hidden;
+    }
+
+}
+
 .list-group{
     position: relative;
     align-self: center;
-    grid-row: 1;
-    grid-column: 2;
-    justify-self: right;
+    float: right;
     z-index: 2 ;
+    top:50%;
+    transform: translateY(-50%);
 }
 
 .list-group-item{
@@ -35,44 +78,56 @@ img[src*="logo.png"]{
     color: #222222;
 }
 
-.grid-container-main {
-    display: grid;
-    width: 100%;
-    /* 
-    margin:2em;
-    */
-    padding: 5em;
-    grid-template-columns: auto auto;
-    grid-template-rows:80vh 80vh 80vh 40vh 80vh 40vh;
-    grid-row-gap: 10em;
-    background-color: #DC143C;
-    align-items: center;
-  }
-
 .h1{
     font-family: sofia-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size:4em;
-    align-self: center;
-    display: grid;
-    grid-row: 1;
-    grid-column: 1;
     color: white;
     position: relative;
-    line-height: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media screen and (max-width: 823px){
+
+    .h1{
+        font-family: sofia-pro, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size:2rem;
+        color: white;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
 }
 
 .h2{
     font-family: sofia-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
+    width: fit-content;
     font-size:2em;
-    display: grid;
     opacity: 1;
     color: white;
-    position: relative;
     line-height: 2em;
+}
+
+@media screen and (max-width: 823px){
+
+    .h2{
+        font-family: sofia-pro, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        width: fit-content;
+        font-size:1rem;
+        opacity: 1;
+        color: white;
+        line-height: 2em;
+    }
+
 }
 
 /* Introduction end */
@@ -88,9 +143,26 @@ img[src*="logo.png"]{
     align-content: center;
   }
 
+  @media screen and (max-width: 823px){
+
+    .grid-container-services {
+        padding: 1em;
+      }
+
+}
+
 img[src="services/code.svg"], [src="services/edit.svg"], [src="services/ad.svg"]{
     width: 5rem;
     display: grid;
+}
+
+@media screen and (max-width: 823px){
+
+    img[src="services/code.svg"], [src="services/edit.svg"], [src="services/ad.svg"]{
+        width: 2rem;
+        display: grid;
+    }
+
 }
 
 .services{
@@ -101,18 +173,22 @@ img[src="services/code.svg"], [src="services/edit.svg"], [src="services/ad.svg"]
     display: grid;
     color: white;
     position: relative;
-    padding: 2rem;
+    padding: 1rem;
 }
 
-.grid-container-process {
-    display: grid;
-    width: 100%;
-    grid-template-rows: 100vh 100vh 100vh;
-  }
+@media screen and (max-width: 823px){
+
+    .services{
+        font-size:1em;
+    }
+
+}
 
   .process{
     background-size: cover;
+    height: 100vh;
     padding: 1em;
+    margin: -2rem;
     font-family: sofia-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -120,3 +196,20 @@ img[src="services/code.svg"], [src="services/edit.svg"], [src="services/ad.svg"]
     position: relative;
     font-size:8em;
   }
+
+  @media screen and (max-width: 823px){
+
+  .process{
+    background-size: cover;
+    height: 100vw;
+    padding: 1rem;
+    margin: -1rem;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    position: relative;
+    font-size:3em;
+  }
+
+}
