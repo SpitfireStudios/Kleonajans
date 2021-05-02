@@ -26,17 +26,17 @@ const h2 = document.querySelectorAll("h2");
 	new ScrollMagic.Scene({triggerElement: h1[0], duration: "50%",})
 					.setTween(tween1)
           			.setPin(h1[0])
-					.addIndicators()
+					//.addIndicators()//
 					.addTo(controller);
 
 	new ScrollMagic.Scene({triggerElement: h2[0], duration: "75%",})
 					.setTween(tween2)
           			.setPin(h2[0])
-					.addIndicators()
+					//.addIndicators()//
 					.addTo(controller);
 
 	new ScrollMagic.Scene({triggerElement: h2[1], duration: "75%"})
 					.setTween(tween3)
           			.setPin(h2[1])
-					.addIndicators()
+					//.addIndicators()//
 					.addTo(controller);
