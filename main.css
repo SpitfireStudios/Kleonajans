@@ -224,6 +224,52 @@ img[src="services/code.svg"], [src="services/edit.svg"], [src="services/ad.svg"]
 
 }
 
+.grid-container-clients {
+    display: grid;
+    width: 100%;
+    padding: 2rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin:0 !important;
+    align-items:center;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+  }
+
+  @media screen and (max-width: 823px){
+
+    .grid-container-clients {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        padding: 0rem;
+        margin:0 !important;
+        align-items:center;
+        grid-auto-flow: column;
+      }
+
+}
+
+img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"], [src="logos/Blutv.png"], [src="logos/Cooltrap.png"], [src="logos/Jeebly.png"], [src="logos/Kymco.png"], [src="logos/MG.png"], [src="logos/NG.png"], [src="logos/Norom.png"], [src="logos/Teacherx.png"], [src="logos/Zebrano.png"]{
+    width: 9rem;
+    display: grid;
+    margin:2rem;
+}
+
+@media screen and (max-width: 823px){
+
+    img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"], [src="logos/Blutv.png"], [src="logos/Cooltrap.png"], [src="logos/Jeebly.png"], [src="logos/Kymco.png"], [src="logos/MG.png"], [src="logos/NG.png"], [src="logos/Norom.png"], [src="logos/Teacherx.png"], [src="logos/Zebrano.png"]{
+        width: 4rem;
+        display: grid;
+        margin-top: 2rem;
+        margin-bottom:2rem;
+    }
+
+}
+
   .process{
     background-size: cover;
     height: 100vh;

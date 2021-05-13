@@ -17,9 +17,9 @@ const h2 = document.querySelectorAll("h2");
 
   var tween1 = timeline.to(h1[0], {y:50, ease: Linear.easeNone, duration:1}).to(h1[0], {opacity:0})
 
-  var tween2 = timeline2.to(h2[0],{x:"35vw", ease: Linear.easeNone, duration:1}).to(h2[0], {opacity:0})
+  var tween2 = timeline2.to(h2[0],{x:"30vw", ease: Linear.easeNone, duration:.3}).to(h2[0], {opacity:0})
 
-  var tween3 = timeline3.to(h2[1],{x:"35vw", ease: Linear.easeNone, duration:1}).to(h2[1], {opacity:0})
+  var tween3 = timeline3.to(h2[1],{x:"31vw", ease: Linear.easeNone, duration:1}).to(h2[1], {opacity:0})
 
 
 	// build scenes
