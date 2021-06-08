@@ -2,6 +2,10 @@ html{
     scroll-behavior:smooth
 }
 
+button:focus{
+    outline:none;
+}
+
 @keyframes sonarWave {
     0% {
       opacity: 0;
