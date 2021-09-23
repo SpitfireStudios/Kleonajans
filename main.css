@@ -76,15 +76,16 @@ clients{
     font-family: poppins, sans-serif;
     font-weight: 600;
     font-style: normal;
-    width: fit-content;
-    font-size:5rem;
+    width: auto;
+    font-size:3rem;
     color: #DC143C;
     line-height: 2em;
     top: 50%;
     transform: translateY(-50%);
     left: 5rem;
     transition: 1s ease-in-out;
-    z-index: 2;
+    z-index: 1;
+    grid-auto-flow: column;
 }
 
 .menubutton{
@@ -155,7 +156,7 @@ clients{
         font-family: poppins, sans-serif;
         font-weight: 600;
         font-style: normal;
-        width: fit-content;
+        width: auto;
         font-size:2rem;
         color: #DC143C;
         line-height: 2em;
@@ -163,7 +164,8 @@ clients{
         transform: translateY(-50%);
         left: 2rem;
         transition: 1s ease-in-out;
-        z-index: 2;
+        z-index: 1;
+        grid-auto-flow: column;
     }
     
     .menubutton{
@@ -259,6 +261,12 @@ li:hover{
     text-decoration: none;
 }
 
+li2{
+    padding: .5em;
+    color: #DC143C;
+    text-decoration: none;
+}
+
 img[src*="logo.png"]{
     width: 10em;
     position: absolute;
@@ -311,7 +319,7 @@ section{
 
 }
 
-.list-group{
+.socials{
     position: relative;
     align-self: center;
     float: right;
@@ -320,7 +328,7 @@ section{
     transform: translateY(-50%);
 }
 
-.list-group-item{
+.socials-item{
     position: relative;
     display: block;
     padding: .75rem 1.25rem;
@@ -329,7 +337,7 @@ section{
     color: white;
 }
 
-.list-group-item:hover{
+.socials-item:hover{
     color: #222222;
 }
 

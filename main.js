@@ -14,7 +14,7 @@ var timeline4 = new TimelineMax();
 const h1 = document.querySelectorAll("h1");
 const h2 = document.querySelectorAll("h2");
 
-	var controller = new ScrollMagic.Controller( {globalSceneOptions: {triggerHook: .5}});
+  var controller = new ScrollMagic.Controller( {globalSceneOptions: {triggerHook: .5}});
 
   var tween1 = timeline.to(h1[0], {y:50, ease: Linear.easeNone, duration:1}).to(h1[0], {opacity:0})
 
@@ -54,13 +54,16 @@ const h2 = document.querySelectorAll("h2");
 					// button in //
 
 					document.querySelector('.menubutton').addEventListener('click', function() {
+
+						var clients = document.getElementsByTagName("clients");
+
 						document.querySelector('.menubutton2').style.cssText="transform:scale(60);";
 						document.querySelector('.menubutton').style.cssText="background:#DC143C;";
 						document.querySelector('.menubuttonred').style.cssText="display:flex;";
-						document.querySelector('clients').style.cssText="opacity:0; display:flex;";
-						
+						document.querySelector('clients').style.cssText="opacity:0; display:grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto auto auto auto auto;";
+
 						setTimeout(function() {
-							document.querySelector('clients').style.cssText="opacity:1; display:flex;";
+							document.querySelector('clients').style.cssText="opacity:1; display:grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto auto auto auto auto;";
 						}, 500); 
 
 					  });
@@ -70,14 +73,16 @@ const h2 = document.querySelectorAll("h2");
 					  // button out //
 
 					  document.querySelector('.menubuttonred').addEventListener('click', function() {
+
+						var clients = document.getElementsByTagName("clients");
 						  
-						document.querySelector('clients').style.cssText="opacity:0; display:flex";
+						document.querySelector('clients').style.cssText="opacity:0; display:grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto auto auto auto auto;";
 				
 						setTimeout(function() {
 						document.querySelector('.menubutton2').style.cssText="transform:scale(1);";
 						document.querySelector('.menubutton').style.cssText="background:white;"
 						document.querySelector('.menubuttonred').style.cssText="display:none;";
-						document.querySelector('clients').style.cssText="opacity:0; display:flex;";
-						  }, 500); 
+						document.querySelector('clients').style.cssText="opacity:0; display:grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto auto auto auto auto;";
+						  }, 500);
 						
 					  });
