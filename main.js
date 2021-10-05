@@ -60,15 +60,13 @@ const h2 = document.querySelectorAll("h2");
 						document.querySelector('.menubutton2').style.cssText="transform:scale(60);";
 						document.querySelector('.menubutton').style.cssText="background:#DC143C;";
 						document.querySelector('.menubuttonred').style.cssText="display:flex;";
-						document.querySelector('clients').style.cssText="opacity:0; display:grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto auto auto auto auto;";
+						document.querySelector('clients').style.cssText="opacity:0; display:grid; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
 
 						setTimeout(function() {
-							document.querySelector('clients').style.cssText="opacity:1; display:grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto auto auto auto auto;";
+							document.querySelector('clients').style.cssText="opacity:1; display:grid; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
 						}, 500); 
 
 					  });
-
-
 
 					  // button out //
 
@@ -76,13 +74,13 @@ const h2 = document.querySelectorAll("h2");
 
 						var clients = document.getElementsByTagName("clients");
 						  
-						document.querySelector('clients').style.cssText="opacity:0; display:grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto auto auto auto auto;";
+						document.querySelector('clients').style.cssText="opacity:0; display:grid; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
 				
 						setTimeout(function() {
 						document.querySelector('.menubutton2').style.cssText="transform:scale(1);";
 						document.querySelector('.menubutton').style.cssText="background:white;"
 						document.querySelector('.menubuttonred').style.cssText="display:none;";
-						document.querySelector('clients').style.cssText="opacity:0; display:grid; grid-template-columns: auto auto auto; grid-template-rows: auto auto auto auto auto auto;";
+						document.querySelector('clients').style.cssText="opacity:0; display:grid; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
 						  }, 500);
 						
 					  });

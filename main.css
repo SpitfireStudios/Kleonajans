@@ -262,9 +262,10 @@ li:hover{
 }
 
 li2{
-    padding: .5em;
+    padding: .1em;
     color: #DC143C;
     text-decoration: none;
+    align-self: center;
 }
 
 li2:hover{
