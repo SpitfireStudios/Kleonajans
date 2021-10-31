@@ -483,6 +483,11 @@ img[src="services/code.svg"], [src="services/edit.svg"], [src="services/ad.svg"]
     align-items:center;
     grid-auto-flow: column;
     grid-auto-columns: auto;
+    z-index: 1;
+  }
+
+  .grid-container-clients:hover {
+      cursor: pointer;
   }
 
   @media screen and (max-width: 823px){
@@ -494,6 +499,7 @@ img[src="services/code.svg"], [src="services/edit.svg"], [src="services/ad.svg"]
         margin:0 !important;
         align-items:center;
         grid-auto-flow: column;
+        z-index: 1;
       }
 
 }
@@ -518,8 +524,8 @@ img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"]
   .process{
     background-size: cover;
     height: 100vh;
-    padding: 1em;
-    margin: -2rem;
+    padding: 0.5em 1em;
+    margin: -.5rem -2rem;
     font-family: poppins, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -534,13 +540,71 @@ img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"]
     background-size: cover;
     height: 100vw;
     padding: 1rem;
-    margin: -1rem;
+    margin:  auto -1rem;
     font-family: poppins, sans-serif;
     font-weight: 700;
     font-style: normal;
     color: white;
     position: relative;
     font-size:3em;
+  }
+
+}
+
+.clientvideo{
+    background-size: cover;
+    max-width: -webkit-fill-available;
+    margin: auto -2rem;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    position: relative;
+    font-size:8em;
+  }
+
+  @media screen and (max-width: 823px){
+
+  .clientvideo{
+    display: none;
+    background-size: cover;
+    margin: auto -1rem;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    position: relative;
+    font-size:3em;
+  }
+
+}
+
+.videooverlay{
+    max-width: -webkit-fill-available;
+    margin: 0;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    position: absolute;
+    font-size:8em;
+    z-index: 1;
+    padding: 0.5em 1em;
+  }
+
+  @media screen and (max-width: 823px){
+
+  .videooverlay{
+    display: none;
+    max-width: -webkit-fill-available;
+    margin: 0;
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    position: absolute;
+    font-size:8em;
+    z-index: 1;
   }
 
 }
