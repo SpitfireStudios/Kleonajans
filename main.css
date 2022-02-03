@@ -49,7 +49,7 @@ button:focus{
 #border{
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
     border-style: solid;
     border-width: 2em;
     border-color: white;
@@ -61,7 +61,7 @@ button:focus{
     #border{
         width: 100%;
         height: 100%;
-        z-index: 1;
+        z-index: 0;
         border-style: solid;
         border-width: 1em;
         border-color: white;
@@ -411,7 +411,7 @@ h2{
     display: grid;
     width: 100%;
     padding: 5em;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 33% 40% 33%;
     grid-template-rows: 10vh 10vh;
     justify-items: center;
     position: relative;
@@ -486,8 +486,9 @@ img[src="services/code.svg"], [src="services/edit.svg"], [src="services/ad.svg"]
     z-index: 1;
   }
 
-  .grid-container-clients:hover {
+  .grid-container-clients > a :hover{
       cursor: pointer;
+      filter: invert(100%);
   }
 
   @media screen and (max-width: 823px){
@@ -532,6 +533,7 @@ img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"]
     color: white;
     position: relative;
     font-size:8em;
+    z-index: -1;
   }
 
   @media screen and (max-width: 823px){
@@ -547,6 +549,7 @@ img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"]
     color: white;
     position: relative;
     font-size:3em;
+    z-index: -1;
   }
 
 }
@@ -561,6 +564,7 @@ img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"]
     color: white;
     position: relative;
     font-size:8em;
+    z-index: -1;
   }
 
   @media screen and (max-width: 823px){
@@ -575,6 +579,7 @@ img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"]
     color: white;
     position: relative;
     font-size:3em;
+    z-index: -1;
   }
 
 }
