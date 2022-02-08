@@ -54,6 +54,7 @@ button:focus{
     border-width: 2em;
     border-color: white;
     position: fixed;
+    pointer-events: none;
 }
 
 @media screen and (max-width: 823px){
@@ -557,14 +558,14 @@ img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"]
 .clientvideo{
     background-size: cover;
     max-width: -webkit-fill-available;
-    margin: auto -2rem;
+    margin: 1rem;
     font-family: poppins, sans-serif;
     font-weight: 700;
     font-style: normal;
     color: white;
-    position: relative;
     font-size:8em;
     z-index: -1;
+    position: absolute;
   }
 
   @media screen and (max-width: 823px){
