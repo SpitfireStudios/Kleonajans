@@ -64,3 +64,14 @@ clientvideo[0].addEventListener('ended', function(){
 // Reset the video to 0
 clientvideo[0].currentTime = 0;
 });
+
+
+function changeShowreelToMobile() {
+	if($(window).width() > 823) {
+		$(".clientvideo").attr("src", "https://kleonajans-europe.s3.eu-central-1.amazonaws.com/Kleon+Ajans+Intro+Video+sub+4K.mov");
+	} else {
+		$(".clientvideo").attr("src", "https://kleonajans-europe.s3.eu-central-1.amazonaws.com/Kleon+Ajans+Intro+Video+Mobile.mov");
+	}
+}
+
+window.onload = changeShowreelToMobile;
