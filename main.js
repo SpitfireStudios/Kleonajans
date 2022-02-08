@@ -56,3 +56,11 @@ const h1 = document.querySelectorAll("h1");
 						  }, 800);
 						
 					  });
+
+var clientvideo = document.getElementsByClassName('clientvideo')
+
+// When the 'ended' event fires
+clientvideo[0].addEventListener('ended', function(){
+// Reset the video to 0
+clientvideo[0].currentTime = 0;
+});
