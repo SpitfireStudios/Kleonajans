@@ -72,7 +72,7 @@ button:focus{
 
 }
 
-clients{
+menu{
     display: none;
     position: fixed;
     font-family: poppins, sans-serif;
@@ -152,7 +152,7 @@ clients{
 
 @media screen and (max-width: 823px){
 
-    clients{
+    menu{
         display: none;
         position: fixed;
         font-family: poppins, sans-serif;

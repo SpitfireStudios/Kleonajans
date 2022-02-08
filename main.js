@@ -27,16 +27,16 @@ const h1 = document.querySelectorAll("h1");
 
 					document.querySelector('.menubutton').addEventListener('click', function() {
 
-						var clients = document.getElementsByTagName("clients");
+						var menu = document.getElementsByTagName("menu");
 
 						document.querySelector('.menubutton2').style.cssText="transform:scale(60);";
 						document.querySelector('.menubutton').style.cssText="background:#DC143C;";
 						document.querySelector('.menubuttonred').style.cssText="display:flex;";
-						document.querySelector('clients').style.cssText="opacity:0; display:none; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
+						document.querySelector('menu').style.cssText="opacity:0; display:none; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
 
 						setTimeout(function() {
-							document.querySelector('clients').style.cssText="opacity:1; display:grid; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
-						}, 500); 
+							document.querySelector('menu').style.cssText="opacity:1; display:grid; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
+						}, 1000); 
 
 					  });
 
@@ -44,15 +44,15 @@ const h1 = document.querySelectorAll("h1");
 
 					  document.querySelector('.menubuttonred').addEventListener('click', function() {
 
-						var clients = document.getElementsByTagName("clients");
+						var menu = document.getElementsByTagName("menu");
 						  
-						document.querySelector('clients').style.cssText="opacity:0; display:grid; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
+						document.querySelector('menu').style.cssText="opacity:0; display:grid; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
 				
 						setTimeout(function() {
 						document.querySelector('.menubutton2').style.cssText="transform:scale(1);";
 						document.querySelector('.menubutton').style.cssText="background:white;"
 						document.querySelector('.menubuttonred').style.cssText="display:none;";
-						document.querySelector('clients').style.cssText="opacity:0; display:none; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
+						document.querySelector('menu').style.cssText="opacity:0; display:none; height:100%; grid-template-columns: repeat(3, auto); grid-template-rows: repeat(6, auto); grid-auto-flow: column;";
 						  }, 800);
 						
 					  });
