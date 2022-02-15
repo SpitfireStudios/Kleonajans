@@ -272,11 +272,18 @@ li2{
 
 li2:hover{
     cursor: pointer;
+    color: #222222;
 }
 
 img[src*="logo.png"]{
     width: 10em;
     position: absolute;
+}
+
+img[src*="logo.png"]:hover{
+    width: 10em;
+    position: absolute;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 823px){
@@ -613,5 +620,69 @@ img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"]
     font-size:8em;
     z-index: 1;
   }
+
+}
+
+.teammember{
+    position:relative; 
+    margin: 5rem; 
+    z-index: -1;
+    float: left;
+    clear: both;
+}
+
+@media screen and (max-width: 1364px){
+
+    .teammember{
+        position:relative; 
+        margin: 0rem; 
+        z-index: -1;
+        float: none;
+        clear: both;
+    }
+
+}
+
+.teampics{
+    width: 30rem;
+    height: 30rem;
+    border-radius:50%; 
+    position:relative;
+    z-index: -1;
+    float: left;
+    margin: 4rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1364px){
+
+    .teampics{
+        width: 18rem;
+        height: 18rem;
+        border-radius:50%; 
+        position:relative;
+        z-index: -1;
+        float: left;
+        margin: 4rem;
+        object-fit: cover;
+    }
+
+}
+
+.teamtext{
+    font-family: poppins, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size:2rem;
+    margin: 4rem;
+    display: grid;
+}
+
+@media screen and (max-width: 1364px){
+
+    .teamtext{
+        display: inline-grid;
+    }
 
 }
