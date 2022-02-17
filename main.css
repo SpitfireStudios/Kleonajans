@@ -564,9 +564,8 @@ img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"]
 }
 
 .clientvideo{
-    background-size: cover;
     max-width: -webkit-fill-available;
-    margin: 1rem;
+    margin: 2rem;
     font-family: poppins, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -574,12 +573,17 @@ img[src="logos/Aksun.png"], [src="logos/Alphabeta.png"], [src="logos/Aynur.png"]
     font-size:8em;
     z-index: -1;
     position: absolute;
+    grid-row: 1;
+    height: 100%;
+    object-fit: cover;
+    width: fit-content;
   }
 
-  @media screen and (max-width: 823px){
+  @media screen and (max-width: 821px){
 
   .clientvideo{
-    background-size: cover;
+    object-fit: cover;
+    width: fit-content;
     margin: 1rem;
     max-width: -webkit-fill-available;
     font-family: poppins, sans-serif;

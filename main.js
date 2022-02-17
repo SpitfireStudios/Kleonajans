@@ -67,10 +67,11 @@ clientvideo[0].currentTime = 0;
 
 
 function changeShowreelToMobile() {
-	if($(window).width() > 823) {
-		$(".clientvideo").attr("src", "https://kleonajans-europe.s3.eu-central-1.amazonaws.com/Kleon+Ajans+Intro+Video+sub+4K.mov");
-	} else {
-		$(".clientvideo").attr("src", "https://kleonajans-europe.s3.eu-central-1.amazonaws.com/Kleon+Ajans+Intro+Video+Mobile.mov");
+	if($(window).width() > 821) {
+		$(".clientvideo").attr("src", "https://player.vimeo.com/progressive_redirect/playback/678665588/rendition/1080p?loc=external&signature=50c5a39dcabfed9437ff5bdad3481164cdd398779c12a217d17278c396ed1ec2");
+	}
+	else {
+		$(".clientvideo").attr("src", "https://player.vimeo.com/progressive_redirect/playback/678669465/rendition/1080p?loc=external&signature=b4650ac5ccf075a08fc5a62357f1b6565c7f6d57704ace98296146f9413a8d0a");
 	}
 }
 
